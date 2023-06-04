@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import datas from "./data.json";
 import { Card, Row, Col, Container } from "react-bootstrap";
 import Dropdown from "react-bootstrap/Dropdown";
 import DropdownButton from "react-bootstrap/DropdownButton";
 import { FaSearch } from "react-icons/fa";
+// import CountryDetails from "../pages/CountryDetails";
 
 export default function Maps() {
   const shuffledData = datas.sort(() => Math.random() - 0.5);
@@ -98,16 +100,19 @@ export default function Maps() {
         <Row className="mt-20 mb-16">
           {searchResults.map((data) => (
             <Col key={data.name} sm={6} md={3}>
-              <a href="/" className="no-underline">
+              <Link
+                to={`/country/${data.name}`}
+                className="no-underline text-black"
+              >
                 <Card className="mb-6">
                   <div>
                     <img
                       src={data.flags.png}
                       alt={data.name}
-                      className="w-full"
+                      className="w-full bg-center bg-no-repeat bg-cover"
                     />
                     <div className="p-4">
-                      <h3 className="font-bold">{data.name}</h3>
+                      <h3 className="font-bold mb-3">{data.name}</h3>
                       <h4 className="text-xs">
                         <span className="font-bold text-xs">Population:</span>{" "}
                         {data.population}
@@ -123,7 +128,7 @@ export default function Maps() {
                     </div>
                   </div>
                 </Card>
-              </a>
+              </Link>
             </Col>
           ))}
         </Row>
