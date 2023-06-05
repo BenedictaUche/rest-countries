@@ -23,13 +23,13 @@ export default function CountryDetails() {
             </Button>
           </Link>
 
-          <div className="flex justify-between mt-20">
+          <div className="flex sm:flex-row flex-col justify-between mt-20">
             <div>
               <img src={country.flags.png} alt={country.name} />
             </div>
             <div>
               <h2 className="font-bold text-3xl mb-4">{country.name}</h2>
-              <div className="flex">
+              <div className="flex sm:flex-row flex-col">
                 <ul>
                   <li>
                     <span className="font-bold">Native Name: </span>
@@ -70,13 +70,13 @@ export default function CountryDetails() {
                   </li>
                 </ul>
               </div>
-              <div className="flex">
+              <div className="flex sm:flex-row flex-col">
                 <h2 className="font-bold">Border Countries</h2>
                 <Link to={`/country/${country.name}`}>
                   {country.borders.map((border) => (
                     <Button
                       key={border}
-                      className="bg-gray-800 ml-5 border-gray-800 inline-flex justify-between"
+                      className="bg-gray-800 ml-5 max-w-lg border-gray-800 inline-flex justify-between"
                     >
                       {border}
                     </Button>
