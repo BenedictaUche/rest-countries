@@ -41,7 +41,7 @@ export default function Maps() {
   return (
     <div className="mt-20">
       <Container>
-        <div className="d-flex justify-content-between">
+        <div className="d-flex sm:flex-row flex-col justify-content-between">
           <div className="inline-flex">
             <div className="input-group">
               <div className="input-group-append">
@@ -61,36 +61,40 @@ export default function Maps() {
 
           <DropdownButton
             id="dropdown-basic-button"
-            className="bg-gray-900 border-none rounded-lg border-gray-900"
+            className="bg-gray-900 border-none rounded-lg border-gray-900 sm:w-auto max-w-full"
             title="Filter by Region"
           >
             <Dropdown.Item
               href="#/action-1"
-              className="bg-gray-800 border-none text-white"
+              className="bg-gray-800 border-none text-white sm:w-auto max-w-full"
               onClick={() => handleRegionChange("Africa")}
             >
               Africa
             </Dropdown.Item>
             <Dropdown.Item
               href="#/action-2"
+              className="bg-gray-800 border-none text-white sm:w-auto max-w-full"
               onClick={() => handleRegionChange("Americas")}
             >
               Americas
             </Dropdown.Item>
             <Dropdown.Item
               href="#/action-3"
+              className="bg-gray-800 border-none text-white sm:w-auto max-w-full"
               onClick={() => handleRegionChange("Asia")}
             >
               Asia
             </Dropdown.Item>
             <Dropdown.Item
               href="#/action-4"
+              className="bg-gray-800 border-none text-white sm:w-auto max-w-full"
               onClick={() => handleRegionChange("Europe")}
             >
               Europe
             </Dropdown.Item>
             <Dropdown.Item
               href="#/action-5"
+              className="bg-gray-800 border-none text-white sm:w-auto max-w-full"
               onClick={() => handleRegionChange("Oceania")}
             >
               Oceania
