@@ -8,7 +8,7 @@ export default function Navbars() {
   }
 
   return (
-    <Navbar className="bg-gray-800 fixed-top">
+    <Navbar className="bg-gray-800 fixed-top shadow-lg shadow-cyan-500/50 ">
       <Container className="container-fluid">
         <Navbar.Brand
           href="#home"
