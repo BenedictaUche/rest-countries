@@ -14,7 +14,7 @@ export default function CountryDetails() {
   return (
     <>
       <Navbar />
-      <Container className="container-fluid">
+      <Container className="container-fluid container">
         <div className="mt-20">
           <Link to="/home">
             <Button className="bg-gray-800 border-gray-800 px-4 inline-flex justify-center items-center">
@@ -23,14 +23,18 @@ export default function CountryDetails() {
             </Button>
           </Link>
 
-          <div className="flex sm:flex-row flex-col justify-between mt-20">
-            <div>
-              <img src={country.flags.png} alt={country.name} />
+          <div className="flex sm:flex-row flex-col justify-evenly mt-20">
+            <div className="border-4 border-slate-300">
+              <img
+                src={country.flags.png}
+                alt={country.name}
+                className="bg-no-repeat bg-center w-full"
+              />
             </div>
             <div>
               <h2 className="font-bold text-3xl mb-4">{country.name}</h2>
               <div className="flex sm:flex-row flex-col">
-                <ul>
+                <ul className="font-medium">
                   <li>
                     <span className="font-bold">Native Name: </span>
                     {country.nativeName}
@@ -53,7 +57,7 @@ export default function CountryDetails() {
                   </li>
                 </ul>
 
-                <ul>
+                <ul className="sm:ml-4 font-medium">
                   <li>
                     <span className="font-bold">Top Level Domain: </span>
                     {country.topLevelDomain}
@@ -71,19 +75,19 @@ export default function CountryDetails() {
                 </ul>
               </div>
               <div className="flex sm:flex-row flex-col">
-                <h2 className="font-bold">Border Countries</h2>
-                <Link to={`/country/${country.borders}`}>
+                <h2 className="font-bold mt-3">Border Countries: </h2>
+                <Link to={`/country/${country.name}`}>
                   {country.borders && country.borders.length > 0 ? (
                     country.borders.map((border) => (
                       <Button
                         key={border}
-                        className="bg-gray-800 ml-5 max-w-lg border-gray-800 inline-flex justify-between"
+                        className="bg-gray-800 sm:ml-5 mt-3 max-w-lg border-gray-800 inline-flex"
                       >
                         {border}
                       </Button>
                     ))
                   ) : (
-                    <span>No border countries</span>
+                    <span>{` ${" "} No border countries`}</span>
                   )}
                 </Link>
               </div>

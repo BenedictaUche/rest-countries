@@ -108,7 +108,7 @@ export default function Maps() {
                 to={`/country/${data.name}`}
                 className="no-underline text-black"
               >
-                <Card className="mb-6">
+                <Card className="mb-6 card">
                   <div>
                     <img
                       src={data.flags.png}
