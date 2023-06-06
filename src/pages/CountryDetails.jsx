@@ -72,15 +72,19 @@ export default function CountryDetails() {
               </div>
               <div className="flex sm:flex-row flex-col">
                 <h2 className="font-bold">Border Countries</h2>
-                <Link to={`/country/${country.name}`}>
-                  {country.borders.map((border) => (
-                    <Button
-                      key={border}
-                      className="bg-gray-800 ml-5 max-w-lg border-gray-800 inline-flex justify-between"
-                    >
-                      {border}
-                    </Button>
-                  ))}
+                <Link to={`/country/${country.borders}`}>
+                  {country.borders && country.borders.length > 0 ? (
+                    country.borders.map((border) => (
+                      <Button
+                        key={border}
+                        className="bg-gray-800 ml-5 max-w-lg border-gray-800 inline-flex justify-between"
+                      >
+                        {border}
+                      </Button>
+                    ))
+                  ) : (
+                    <span>No border countries</span>
+                  )}
                 </Link>
               </div>
             </div>
