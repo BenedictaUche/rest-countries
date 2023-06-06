@@ -113,7 +113,7 @@ export default function Maps() {
                     <img
                       src={data.flags.png}
                       alt={data.name}
-                      className="w-full bg-center bg-no-repeat bg-cover"
+                      className="bg-center bg-no-repeat bg-cover"
                     />
                     <div className="p-4">
                       <h3 className="font-bold mb-3">{data.name}</h3>

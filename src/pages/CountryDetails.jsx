@@ -28,7 +28,7 @@ export default function CountryDetails() {
               <img
                 src={country.flags.png}
                 alt={country.name}
-                className="bg-no-repeat bg-center w-full"
+                className="bg-no-repeat bg-center w-full h-full"
               />
             </div>
             <div>
