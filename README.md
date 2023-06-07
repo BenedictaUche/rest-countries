@@ -45,6 +45,6 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://benedicta-onyebuchi.vercel.app)
+- Website - [Benedicta](https://benedicta-onyebuchi.vercel.app)
 - Frontend Mentor - [@BenedictaCodes](https://www.frontendmentor.io/profile/benedictacodes)
 - Twitter - [@Benny_dicta1](https://www.twitter.com/benny_dicta1)
