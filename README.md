@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/BenedictaUche/rest-countries](https://github.com/BenedictaUche/rest-countries)
-- Live Site URL: [[Add live site URL here](https://rest-countries-pink.vercel.app/)](https://rest-countries-pink.vercel.app/)
+- Live Site URL: [https://rest-countries-pink.vercel.app/](https://rest-countries-pink.vercel.app/)
 
 ## My process
 
