@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/BenedictaUche/rest-countries)
-- Live Site URL: [Add live site URL here](https://rest-countries-pink.vercel.app/)
+- Solution URL: [https://github.com/BenedictaUche/rest-countries](https://github.com/BenedictaUche/rest-countries)
+- Live Site URL: [[Add live site URL here](https://rest-countries-pink.vercel.app/)](https://rest-countries-pink.vercel.app/)
 
 ## My process
 
